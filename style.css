@@ -21,7 +21,7 @@ body {
 }
 
 .item {
-    flex-basis: 100px;
+    flex: 1;
     height: 100px;
     background: #254DE4;
     color: #FFF;
@@ -33,13 +33,12 @@ body {
 }
 
 .item:nth-of-type(1) {
-    flex-grow: 1;
-    flex-basis: 200px;
+    flex-shrink: 1;
 }
 
 .item:nth-of-type(2) {
-    flex-grow: 2;
+    flex-shrink: 2;
 }
 .item:nth-of-type(3) {
-    flex-grow: 1;
+    flex-shrink: 3;
 }
