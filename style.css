@@ -39,8 +39,88 @@ ul {
     height: 60px;
 }
 
-.logo {
+.navbar .logo {
     font-size: x-large;
     font-weight: bold;
 }
 
+.navbar a {
+    color: #FFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar:hover {
+    color: lightblue;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar ul {
+    display: flex;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.header {
+    background-color: #0151CC;
+    color: #FFF;
+    min-height: 400px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.header img {
+    max-width: 400px;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.boxes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box {
+    flex: 1;
+    background: #0A51CC;
+    color: #FFF;
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    padding: 15px 20px;
+}
+
+.box i {
+    margin-right: 10px;
+}
+
+@media(max-width: 768px) {
+    .header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.boxes .container {
+    display: block;
+    text-align: center;
+}
+
+}
